@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Goods</title>
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Watch<span>Goods</span></a>
+
+      <div class="navbar-nav">
+        <a href="Home-Pages.html">Home</a>
+        <a href="product-pages.html">Our Product</a>
+        <a href="about-us.html">About Us</a>
+        <a href="store-location-pages.html">Store Location</a>
+        <a href="contact-us-pages.html">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"> <i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu"> <i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!--Contact Ection Start-->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        We would love to hear from you! Whether you have a question, feedback,
+        or just want to say hello, our team is here to assist you. Feel free to
+        reach out to us using the contact information provided below.
+        WatchGoods.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.8805905035!2d124.836345!3d1.3305563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32876c93a76055cb%3A0xcb7b420ad8539f64!2sTomohon%2C%20Tomohon%20City%2C%20North%20Sulawesi!5e0!3m2!1sen!2sid!4v1685206684420!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <div id="'error"></div>
+        <form  id="form" action="/" method="GET">
+          <div class="input-group">
+            <i data-feather=""></i>
+            <input type="text" placeholder="Full-name" id="name" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather=""></i>
+            <input
+              type="text"
+              placeholder="E-Mail Address"
+              id="Email"
+              
+            />
+           
+          </div>
+
+          <div class="input-group">
+            <select id="country" required>
+              <option value="">-- Select Country/Region --</option>
+              <option value="AF">Afghanistan</option>
+              <option value="AL">Albania</option>
+              <option value="DZ">Algeria</option>
+              <option value="AS">American Samoa</option>
+              <option value="AD">Andorra</option>
+              <option value="AO">Angola</option>
+              <option value="BS">Bahamas</option>
+              <option value="BH">Bahrain</option>
+              <option value="BD">Bangladesh</option>
+              <option value="BB">Barbados</option>
+              <option value="BY">Belarus</option>
+              <option value="BE">Belgium</option>
+              <option value="BZ">Belize</option>
+              <option value="BJ">Benin</option>
+              <option value="BM">Bermuda</option>
+              <option value="BT">Bhutan</option>
+              <option value="BO">Bolivia</option>
+              <option value="BA">Bosnia and Herzegovina</option>
+              <option value="BW">Botswana</option>
+              <option value="BR">Brazil</option>
+              <option value="BN">Brunei</option>
+              <option value="BG">Bulgaria</option>
+              <option value="BF">Burkina Faso</option>
+              <option value="BI">Burundi</option>
+              <option value="KH">Cambodia</option>
+              <option value="CM">Cameroon</option>
+              <option value="CA">Canada</option>
+              <option value="CV">Cape Verde</option>
+              <option value="KY">Cayman Islands</option>
+              <option value="CF">Central African Republic</option>
+              <option value="TD">Chad</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CO">Colombia</option>
+              <option value="KM">Comoros</option>
+              <option value="CG">Congo</option>
+              <option value="CK">Cook Islands</option>
+              <option value="CR">Costa Rica</option>
+              <option value="HR">Croatia</option>
+              <option value="CU">Cuba</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DK">Denmark</option>
+              <option value="DJ">Djibouti</option>
+              <option value="DM">Dominica</option>
+              <option value="DO">Dominican Republic</option>
+              <option value="TL">East Timor</option>
+              <option value="EC">Ecuador</option>
+              <option value="EG">Egypt</option>
+              <option value="SV">El Salvador</option>
+              <option value="ID">Indonesia</option>
+              <!-- Add more countries/regions as needed -->
+            </select>
+          </div>
+
+          <div>
+            <input type="checkbox" id="agreement" required />
+            <label for="agreement"
+              >I agree to receive a copy of my message</label
+            >
+          </div>
+
+          <div class="inputss">
+            <label>Your Message</label>
+            <textarea
+              class="textbox"
+              rows="10"
+              placeholder="Enter Your Messages"
+            ></textarea>
+            <span id="name-error"></span>
+          </div>
+
+          <button
+            type="submit
+            "
+            class="btn"
+          >
+            Submit
+          </button>
+          
+        </form>
+      </div>
+    </section>
+
+    <!--Contact Section End-->
+
+    <!--Footer Start-->
+    <footer>
+      <div class="social">
+        <a href=""><i data-feather="instagram"></i></a>
+        <a href=""><i data-feather="twitter"></i></a>
+        <a href=""><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="link">
+        <a href="Home-Pages.html">Home Page</a>
+        <a href="about-us.html">About Us</a>
+        <a href="product-pages.html">Our Products</a>
+        <a href="contact-us-pages.html">Contact Us</a>
+        <a href="store-location-pages.html">Store Location</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Immanuel Leon Salomo</a> | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <!--Footer End-->
+
+    <!-- Feather Icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Java Script -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

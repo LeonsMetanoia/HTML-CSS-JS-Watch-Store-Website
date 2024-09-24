@@ -1,0 +1,362 @@
+:root {
+  --primary: #ced4da;
+  --background: #dee2e6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: #010101;
+  min-height: 3000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #ced4da;
+  border-bottom: 1px solid var(#010101);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #010101;
+}
+
+.navbar .navbar-logo span {
+  color: white;
+}
+
+.navbar .navbar-nav a {
+  color: #010101;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: #fff;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--background);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a {
+  color: #111;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #fff;
+}
+
+#menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/tyler-harris-dJHh3fxXuK4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 30%;
+  background: linear-gradient(0deg, rgba(#ced4da)) 8%, rgba(#ced4da);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.hero .content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.hero .content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #111;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5rem);
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  left: -200px;
+}
+
+.banner h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-button:hover {
+  background-color: #ff3300;
+}
+
+/* merk*/
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.product-watch {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.product-watch img {
+  width: 50%;
+}
+
+.product-watch .cartierr {
+  width: 15%;
+}
+.product-watch .omegaa {
+  width: 35%;
+}
+.product-watch .pateksss {
+  width: 15%;
+}
+.product-watch .rolexsss {
+  width: 15%;
+}
+.product-watch .audemarsss {
+  width: 15%;
+}
+
+.product .product-watch .product-title {
+  margin: 1rem auto 0.5rem;
+}
+
+.product p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.product h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.product .product-watch:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#Product-list .list-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+/* Footer */
+
+footer {
+  background-color: #ced4da;
+  text-align: center;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  color: #010101;
+  margin: 0.5rem;
+}
+footer .social a:hover {
+  color: #dee2e6;
+}
+
+footer .link a:hover {
+  color: #dee2e6;
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #010101;
+  padding-left: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.7rem;
+}
+
+footer .credit a {
+  color: #010101;
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #010101;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--background);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about.row .content {
+    padding: 0;
+  }
+
+  .hero .img-patek {
+    position: relative;
+    width: 100px;
+    left: -200px;
+  }
+  .hero .img-rolex {
+    position: relative;
+    left: -180px;
+    width: 100px;
+  }
+  .hero .img-audemars {
+    position: relative;
+    width: 100px;
+    left: -140px;
+  }
+  .hero .img-omega {
+    position: relative;
+    width: 100px;
+    left: -130px;
+  }
+  .hero .img-cartier {
+    position: relative;
+    width: 100px;
+    left: -130px;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .banner {
+    width: 50%;
+    height: 20vh;
+  }
+  .banner h2 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .banner p {
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .banner {
+    position: relative;
+
+    margin-top: 500px;
+    left: -300px;
+  }
+}

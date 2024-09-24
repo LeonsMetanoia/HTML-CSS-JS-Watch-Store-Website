@@ -1,0 +1,357 @@
+:root {
+    --primary: #ced4da;
+    --background: #dee2e6;
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: #010101;
+    min-height: 1000px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #ced4da;
+    border-bottom: 1px solid var(#010101);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #010101;
+  }
+  
+  .navbar .navbar-logo span{
+      color: white;
+     
+  }
+  
+  .navbar .navbar-nav a {
+  color: #010101;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  }
+  .navbar .navbar-nav a:hover {
+      color: #fff;
+  }
+  
+  .navbar .navbar-nav a::after{
+      content: '';
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid var(--background);
+      transform: scaleX(0);
+      transition: 0.2s linear;
+  }
+  .navbar .navbar-nav a:hover::after{
+      transform: scaleX(0.7);
+     
+  }
+  
+  .navbar .navbar-extra a{
+      color: #111;
+      margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover{
+      color: #fff ;
+      
+  }
+  
+  #menu {
+      display: none;
+  }
+  
+  .row a {
+    color:#010101;
+  }
+  
+  /* Menu Section */
+
+  /*patek*/
+  .product {
+      padding: 7rem 7% 1.4rem;
+  }
+  .product .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;                              
+      justify-content: center;    
+  }
+  
+  .product-watch {
+      text-align: center;
+      padding-bottom: 4rem;
+      
+  }
+
+  .product-watch .patek12 {
+    width: 45%;
+  }
+
+  .product-watch .patek11 {
+
+    width: 40%;
+  }
+
+  .product-watch .patek13 {
+   width: 37%;
+  
+  }
+
+
+/*rolex*/
+
+.product-watch .rolex1 {
+    width: 20%;
+}
+.product-watch .rolex2 {
+    width: 20%;
+}
+.product-watch .rolex3 {
+    width: 20%;
+}
+
+
+/*omega*/
+.product-watch .omega1 {
+    width: 30%;
+}
+
+.product-watch .omega2 {
+    width: 30%;
+}
+.product-watch .omega3 {
+    width: 30%;
+}
+
+ 
+/*audemars*/
+
+
+.product-watch .audemars1 {
+    width: 25%;
+}
+
+.product-watch .audemars2 {
+    width: 30%;
+}
+.product-watch .audemars3 {
+    width: 70%;
+}
+
+
+/*cartier*/
+
+.product-watch .cartier1 {
+    width: 70%;
+}
+
+.product-watch .cartier2 {
+    width: 50%;
+}
+.product-watch .cartier3 {
+    width: 40%;
+}
+
+
+
+
+
+  .product-watch img {
+     
+      width: 50%;
+  }
+  .product-watch .cartierr {
+     
+      width: 35%;
+  }
+  .product-watch .omegaa {
+   
+      width: 35%;
+  }
+
+
+
+
+  
+  .product .product-watch .product-title {
+      margin: 1rem auto 0.5rem;
+  }
+  
+  .product p, .contact p{
+      text-align: center;
+      max-width: 30rem;
+      margin: auto;
+      font-weight: 300;
+      line-height: 1.6;
+  }
+  .product h2, .contact h2 {
+      margin-bottom: 1rem;
+  }
+  .product .product-watch:hover{
+    
+      box-shadow: 10px 10px 54px rgba(70,62,221, 0.1);
+  }
+  #Product-list .list-box:hover{
+    
+      box-shadow: 10px 10px 54px rgba(70,62,221, 0.1);
+  }
+  
+
+
+
+  
+    /* Footer */
+
+    footer {
+
+        background-color: #ced4da;
+        text-align: center;
+        padding: 1rem 0;
+        padding-bottom: 2rem;
+     
+      }
+  
+      footer .social {
+        padding: 1rem 0;
+      }
+   footer .social a {
+    color: #010101;
+    margin: 0.5rem;
+    
+   }
+   footer .social a:hover {
+    color: #dee2e6
+   }
+  
+  
+   footer .link a:hover {
+    color: #dee2e6
+   }
+  
+  
+  footer .link {
+    margin-bottom: 1.4rem;
+  }
+  
+  
+   footer .link a {
+    color: #010101;
+    padding-left: 0.7rem 1rem;
+   }
+    
+   footer .credit {
+    font-size: 0.7rem;
+   }
+    
+   footer .credit a {
+    color: #010101;
+    font-weight: 700;
+   }
+ 
+  
+   .product h2{
+    text-align: center;
+    font-size: 2.6rem ;
+    margin-bottom: 3rem;
+}
+  
+.product {
+    padding: 7rem 7% 1.4rem;
+}
+  
+  
+  /* Media Queries */
+  
+  @media (max-width: 800px) {
+      html {
+          font-size: 50%;
+      }
+  
+      #menu {
+          display: inline-block;
+      }
+  
+     .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #010101;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+     }
+  
+  
+     .navbar .navbar-nav.active{
+      right: 0;
+     }
+  
+     .navbar .navbar-nav a{
+      color: var(--background);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+     }
+     .navbar .navbar-nav a::after{
+      transform-origin: 0 0;
+     }
+     .navbar .navbar-nav a:hover:after{
+      transform: scaleX(0.2);
+     }
+   
+  
+  
+  .product .Product-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      justify-content: center;
+     
+   
+  }
+  
+  
+  .product p {
+  
+      font-size: 1.2rem;
+  }
+ 
+  }
+  
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+      html {
+          font-size: 40%;
+      }
+      #menu {
+          display: inline-block;
+      }
+     
+      
+  }
+  

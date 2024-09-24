@@ -1,0 +1,542 @@
+:root {
+  --primary: #ced4da;
+  --background: #dee2e6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: #010101;
+  min-height: 5000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #ced4da;
+  border-bottom: 1px solid var(#010101);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo{
+font-size: 2rem;
+font-weight: 600;
+color: #010101;
+}
+
+.navbar .navbar-logo span{
+    color: white;
+   
+}
+
+.navbar .navbar-nav a {
+color: #010101;
+display: inline-block;
+font-size: 1.2rem;
+margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+    color: #fff;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--background);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.7);
+   
+}
+
+.navbar .navbar-extra a{
+    color: #111;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: #fff ;
+    
+}
+
+#menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/tyler-harris-dJHh3fxXuK4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+content: '';
+display: block;
+position: absolute;
+width: 100%;
+height: 40%;
+bottom: 30%;
+background: linear-gradient(0deg, rgba(#ced4da)) 8%, rgba(#ced4da);
+}
+
+
+.hero .content {
+padding: 1.4rem 7%;
+max-width: 60rem;
+}
+.hero .content h1{
+font-size:3rem;
+color: #fff;
+
+}
+.hero .content p {
+
+font-size: 1.2rem;
+color: #fff;
+
+}
+.hero .content p {
+
+    font-size: 1.2rem;
+    color: #fff;
+   
+}
+
+
+
+
+
+.hero .content .cta {
+margin-top: 1rem;
+display: inline-block;
+padding: 1rem 2rem;
+font-size: 1.2rem;
+color: #111;
+background-color: var(--primary);
+border-radius: 0.5rem;
+box-shadow: 1px 1px 3px rgba(1,1,3,0.5rem);
+}
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  
+  margin-bottom: 40%;
+  }
+  
+  .image-container img {
+    width: 15%;
+  }
+
+  .banner {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+   left: -200px;
+  }
+  
+  .banner h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-button {
+    display: inline-block;
+    background-color: #ff5500;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner-button:hover {
+    background-color: #ff3300;
+  }
+/* About Section */
+.about {
+    padding: 7rem 7% 1.4rem;
+}
+.about .product, .contact, .location {
+    padding: 7rem 7% 1.4rem;
+}
+
+.about h2, .product h2, .contact h2 {
+    text-align: center;
+    font-size: 2.6rem ;
+    margin-bottom: 3rem;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+
+    width: 100%;
+}
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about.row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.about.row .content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.4rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* Menu Section */
+.product {
+    padding: 7rem 7% 1.4rem;
+}
+.product .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;                              
+    justify-content: center;    
+}
+
+.product-watch {
+    text-align: center;
+    padding-bottom: 4rem;
+    
+}
+
+.product-watch img {
+   
+    width: 50%;
+}
+.product-watch .cartierr {
+   
+    width: 35%;
+}
+.product-watch .omegaa {
+ 
+    width: 35%;
+}
+
+.product .product-watch .product-title {
+    margin: 1rem auto 0.5rem;
+}
+
+.product p, .contact p{
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.product h2, .contact h2 {
+    margin-bottom: 1rem;
+}
+.product .product-watch:hover{
+  
+    box-shadow: 10px 10px 54px rgba(70,62,221, 0.1);
+}
+#Product-list .list-box:hover{
+  
+    box-shadow: 10px 10px 54px rgba(70,62,221, 0.1);
+}
+/* contact section */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #dee2e6;
+    border: 1px solid #fff;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #111;
+}
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #111;
+    background-color: #dee2e6;
+
+}
+
+.input-group span {
+ position: relative;
+    bottom: 12px;
+    right: 5px;
+    font-size: 12px;
+    color: red;
+}
+
+.inputss .textbox {
+    width: 700px;
+}
+.inputss span {
+    
+color: red;
+}
+
+#submit-error {
+    color: red;
+}
+
+
+/* Store Location */
+body {
+ 
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.store {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.store img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.store h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.store p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.store img {
+    width: 50%;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+
+   .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #010101;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+   }
+
+
+   .navbar .navbar-nav.active{
+    right: 0;
+   }
+
+   .navbar .navbar-nav a{
+    color: var(--background);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+   }
+   .navbar .navbar-nav a::after{
+    transform-origin: 0 0;
+   }
+   .navbar .navbar-nav a:hover:after{
+    transform: scaleX(0.2);
+   }
+   .about .row{
+    flex-wrap: wrap;
+   }
+   .about .row .about-img img{
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+   }
+   .about.row .content{
+    padding: 0;
+   }
+  
+   .hero .img-patek {
+    position: relative;
+width: 100px;
+left: -200px;
+   }
+   .hero .img-rolex {
+    position: relative;
+    left: -180px;
+    width: 100px;
+       }
+  .hero .img-audemars {
+    position: relative;
+        width: 100px;
+        left: -140px;
+           }
+ .hero .img-omega {
+    position: relative;
+            width: 100px;
+            left: -130px;
+               }
+ .hero .img-cartier {
+    position: relative;
+  width: 100px;
+  left: -130px;
+         }
+
+
+.product .Product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+   
+ 
+}
+
+
+.product p {
+
+    font-size: 1.2rem;
+}
+.contact .row {
+    flex-wrap: wrap;
+}
+.contact .row .map {
+    height: 30rem;
+}
+.contact .row form {
+    padding-top: 0;
+}
+.contact .row span{
+
+    flex-wrap: wrap;
+}
+}
+
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 20%;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .hero .img-patek {
+        position: relative;
+    width: 30px;
+    left: -100px;
+       }
+       .hero .img-rolex {
+        position: relative;
+        left: -180px;
+        width: 30px;
+           }
+      .hero .img-audemars {
+        position: relative;
+            width: 30px;
+            left: -140px;
+               }
+     .hero .img-omega {
+        position: relative;
+                width: 50px;
+                left: -130px;
+                   }
+     .hero .img-cartier {
+        position: relative;
+      width: 30px;
+      left: -130px;
+             }
+    
+}
